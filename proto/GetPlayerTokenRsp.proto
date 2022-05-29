@@ -31,6 +31,10 @@ message GetPlayerTokenRsp {
 	uint32 reg_platform = 633;
 	string client_ip_str = 1238;
 	string birthday = 1109;
-	uint32 NNCIBOLDIAI = 1728;
-	bool FNECFLEAKKO = 1679;
+	uint32 AMDCICOMIMJ = 1728;
+	bool CNNJJOIDLHE = 1679;
+	repeated uint32 FELKEGHLKOG = 2012;
+	string CAHLCMMFHIH = 1596;
+	string PAKPELLDKEM = 1501;
+	uint32 BNLDENCDKIA = 1447;
 }
