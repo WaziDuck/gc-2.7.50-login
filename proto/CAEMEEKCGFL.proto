@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option java_package = "emu.grasscutter.net.proto";
+
+enum CAEMEEKCGFL {
+	CAEMEEKCGFL_FODJFGNFAFA = 0;
+	CAEMEEKCGFL_JHFJCGDLGGG = 1;
+	CAEMEEKCGFL_CGFGEIHBONJ = 2;
+	CAEMEEKCGFL_PBBGJKOHEMM = 3;
+}

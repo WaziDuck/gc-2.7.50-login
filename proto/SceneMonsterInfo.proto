@@ -29,6 +29,7 @@ message SceneMonsterInfo {
 	uint32 ai_config_id = 19;
 	uint32 level_route_id = 20;
 	uint32 init_pose_id = 21;
+	bool EOPLJJLHJEC = 22;
 	oneof content {
 		SceneFishInfo fish_info = 50;
 	}

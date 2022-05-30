@@ -6,6 +6,6 @@ import "Vector.proto";
 
 message PlayerLocationInfo {
 	uint32 uid = 1;
-	Vector pos = 2;
-	Vector rot = 3;
+	Vector pos = 13;
+	Vector rot = 12;
 }

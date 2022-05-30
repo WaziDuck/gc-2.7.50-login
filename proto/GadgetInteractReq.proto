@@ -15,5 +15,5 @@ message GadgetInteractReq {
 	uint32 gadget_id = 14;
 	bool is_use_condense_resin = 15;
 	ResinCostType resin_cost_type = 11;
-	uint32 GCIEIJIOADO = 12;
+	uint32 MPDBGIONLDB = 12;
 }

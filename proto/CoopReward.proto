@@ -3,8 +3,8 @@ syntax = "proto3";
 option java_package = "emu.grasscutter.net.proto";
 
 message CoopReward {
-	uint32 id = 1;
-	State state = 2;
+	uint32 id = 13;
+	State state = 7;
 
 	enum State {
 		STATE_UNLOCK = 0;

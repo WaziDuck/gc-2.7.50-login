@@ -8,5 +8,5 @@ option java_package = "emu.grasscutter.net.proto";
 message ItemGivingRsp {
 	int32 retcode = 13;
 	uint32 giving_id = 6;
-	uint32 LEMILHEIALJ = 12;
+	uint32 OFJNKGOOIHE = 12;
 }

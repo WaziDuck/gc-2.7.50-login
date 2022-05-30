@@ -12,5 +12,5 @@ message AvatarExpeditionGetRewardRsp {
 	int32 retcode = 15;
 	map<uint64, AvatarExpeditionInfo> expedition_info_map = 5;
 	repeated ItemParam item_list = 6;
-	repeated ItemParam BNFDDKNNJJH = 2;
+	repeated ItemParam MBNOODLAGBF = 2;
 }

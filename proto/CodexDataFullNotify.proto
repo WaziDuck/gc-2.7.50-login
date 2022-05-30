@@ -9,7 +9,7 @@ import "CodexTypeData.proto";
 // EnetIsReliable: true
 message CodexDataFullNotify {
 	repeated CodexTypeData type_data_list = 5;
-	repeated uint32 IGMFFAGOCIA = 11;
-	uint32 BIFMJKDHHLG = 8;
-	uint32 AEHJDIPOLHC = 10;
+	repeated uint32 PCDLJGMKFPF = 11;
+	uint32 GAICGCODEMA = 8;
+	uint32 AMPLFHNHKLG = 10;
 }

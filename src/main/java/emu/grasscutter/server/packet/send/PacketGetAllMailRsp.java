@@ -24,9 +24,9 @@ public class PacketGetAllMailRsp extends BasePacket {
         GetAllMailRsp.Builder proto = GetAllMailRsp.newBuilder();
 
         if (isGiftMail) {
-            proto.setANKKGPJCINB(true);
+            proto.setCJPALFPMFFB(true);
         } else {
-            proto.setANKKGPJCINB(false);
+            proto.setCJPALFPMFFB(false);
 
             if (player.getAllMail().size() != 0) { // Make sure the player has mail
                 List<MailData> mailDataList = new ArrayList<MailData>();
@@ -61,7 +61,7 @@ public class PacketGetAllMailRsp extends BasePacket {
                                 mailData.setImportance(message.importance);
                                 mailData.setIsRead(message.isRead);
                                 mailData.setIsAttachmentGot(message.isAttachmentGot);
-                                mailData.setBHCAHLJIKFFValue(1);
+                                mailData.setConfigId(1); // Maybe this is the config id?
 
                                 mailDataList.add(mailData.build());
                             }

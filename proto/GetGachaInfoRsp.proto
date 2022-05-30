@@ -11,6 +11,6 @@ message GetGachaInfoRsp {
 	int32 retcode = 14;
 	repeated GachaInfo gacha_info_list = 12;
 	uint32 gacha_random = 13;
-	uint32 NKJOBOABFOJ = 7;
-	bool PODALHILIKF = 9;
+	uint32 KKHCOFPEMNJ = 7;
+	bool LCPFDBAGIEC = 9;
 }

@@ -2,10 +2,11 @@ syntax = "proto3";
 
 option java_package = "emu.grasscutter.net.proto";
 
+//import "CEPBPNGEECJ.proto";
 import "ChannellerSlabLoopDungeonResultInfo.proto";
+//import "CIBIKJEPFDF.proto";
 import "DungeonSettleExhibitionInfo.proto";
 import "EffigyChallengeDungeonResultInfo.proto";
-//import "KHPIGECGFKI.proto";
 import "ParamList.proto";
 import "RoguelikeDungeonSettleInfo.proto";
 import "StrengthenPointData.proto";
@@ -24,13 +25,14 @@ message DungeonSettleNotify {
 	map<uint32, StrengthenPointData> strengthen_point_data_map = 4;
 	uint32 result = 15;
 	repeated DungeonSettleExhibitionInfo exhibition_info_list = 14;
-	//uint32 OMBINLAOGBM = 5;
+	uint32 COOIBMPJHDK = 5;
 	oneof detail {
 		TowerLevelEndNotify tower_level_end_notify = 97;
 		TrialAvatarFirstPassDungeonNotify trial_avatar_first_pass_dungeon_notify = 796;
 		ChannellerSlabLoopDungeonResultInfo channeller_slab_loop_dungeon_result_info = 1671;
 		EffigyChallengeDungeonResultInfo effigy_challenge_dungeon_result_info = 1638;
 		RoguelikeDungeonSettleInfo roguelike_dungeon_settle_info = 71;
-		//KHPIGECGFKI crystal_link_settle_info = 430;
+		//CIBIKJEPFDF crystal_link_settle_info = 430;
+		//CEPBPNGEECJ summer_time_v2_dungeon_settle_info = 223;
 	}
 }

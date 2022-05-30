@@ -12,4 +12,10 @@ message ItemGivingReq {
 	uint32 giving_id = 14;
 	repeated ItemParam item_param_list = 10;
 	map<uint64, uint32> item_guid_count_map = 6;
+	LENCDFJACFN IIMNOANBCND = 15;
+
+	enum LENCDFJACFN {
+		LENCDFJACFN_QUEST = 0;
+		LENCDFJACFN_HHHOPEHIPFG = 1;
+	}
 }

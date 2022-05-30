@@ -6,12 +6,12 @@ import "AbilitySyncStateInfo.proto";
 import "ServerBuff.proto";
 
 message AvatarEnterSceneInfo {
-	uint64 avatar_guid = 1;
-	uint32 avatar_entity_id = 2;
+	uint64 avatar_guid = 7;
+	uint32 avatar_entity_id = 10;
 	AbilitySyncStateInfo avatar_ability_info = 3;
-	repeated uint32 buff_id_list = 4;
-	uint64 weapon_guid = 5;
-	uint32 weapon_entity_id = 6;
-	AbilitySyncStateInfo weapon_ability_info = 7;
-	repeated ServerBuff server_buff_list = 8;
+	repeated uint32 buff_id_list = 14;
+	uint64 weapon_guid = 2;
+	uint32 weapon_entity_id = 11;
+	AbilitySyncStateInfo weapon_ability_info = 5;
+	repeated ServerBuff server_buff_list = 15;
 }

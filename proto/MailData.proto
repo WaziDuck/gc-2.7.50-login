@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option java_package = "emu.grasscutter.net.proto";
 
-import "CBJEDMGOBPL.proto";
+import "CAEMEEKCGFL.proto";
 import "MailItem.proto";
 import "MailTextContent.proto";
 
@@ -17,5 +17,5 @@ message MailData {
 	bool is_attachment_got = 12;
 	uint32 config_id = 13;
 	repeated string argument_list = 14;
-	CBJEDMGOBPL BHCAHLJIKFF = 15;
+	CAEMEEKCGFL IHKBINPONKP = 15;
 }

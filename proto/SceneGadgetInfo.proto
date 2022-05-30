@@ -8,6 +8,7 @@ import "BossChestInfo.proto";
 import "ClientGadgetInfo.proto";
 import "CustomGadgetTreeInfo.proto";
 import "EchoShellInfo.proto";
+//import "FHMOLALLEEN.proto";
 import "FishPoolInfo.proto";
 import "FoundationInfo.proto";
 import "GadgetBornType.proto";
@@ -64,5 +65,6 @@ message SceneGadgetInfo {
 		FishPoolInfo fish_pool_info = 59;
 		CustomGadgetTreeInfo custom_gadget_tree_info = 60;
 		RoguelikeGadgetInfo roguelike_gadget_info = 61;
+		//FHMOLALLEEN night_crow_gadget_info = 62;
 	}
 }

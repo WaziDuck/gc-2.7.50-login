@@ -49,7 +49,7 @@ message PlayerLoginReq {
 	uint32 target_home_param = 1129;
 	AdjustTrackingInfo adjust_tracking_info = 280;
 	string birthday = 174;
-	string MADLMMNJICA = 135;
-	string CCLJBEJHFOP = 745;
-	uint32 LKCFGDBHHIL = 1881;
+	string KJBIJGINPMG = 135;
+	string HJAHELLMPEO = 745;
+	uint32 DHNAPGHJPMF = 1881;
 }

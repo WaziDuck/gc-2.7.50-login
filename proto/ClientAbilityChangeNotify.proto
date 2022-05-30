@@ -11,5 +11,5 @@ import "AbilityInvokeEntry.proto";
 message ClientAbilityChangeNotify {
 	uint32 entity_id = 6;
 	repeated AbilityInvokeEntry invokes = 8;
-	bool JCJNLMLGHJE = 10;
+	bool DDFFCMDMJFJ = 10;
 }

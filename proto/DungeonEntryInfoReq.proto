@@ -2,6 +2,8 @@ syntax = "proto3";
 
 option java_package = "emu.grasscutter.net.proto";
 
+import "Uint32Pair.proto";
+
 // CmdId: 909
 // EnetChannelId: 0
 // EnetIsReliable: true
@@ -9,4 +11,5 @@ option java_package = "emu.grasscutter.net.proto";
 message DungeonEntryInfoReq {
 	uint32 point_id = 15;
 	uint32 scene_id = 3;
+	repeated Uint32Pair JBHJCABNDGP = 10;
 }

@@ -7,5 +7,5 @@ option java_package = "emu.grasscutter.net.proto";
 // EnetIsReliable: true
 // IsAllowClient: true
 message GetAllMailReq {
-	bool ANKKGPJCINB = 7;
+	bool CJPALFPMFFB = 7;
 }
