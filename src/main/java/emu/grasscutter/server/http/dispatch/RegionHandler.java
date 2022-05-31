@@ -5,6 +5,7 @@ import com.google.protobuf.InvalidProtocolBufferException;
 import emu.grasscutter.Grasscutter;
 import emu.grasscutter.Grasscutter.ServerRunMode;
 import emu.grasscutter.net.proto.QueryCurrRegionHttpRspOuterClass.*;
+import emu.grasscutter.net.proto.QueryCurrRegionHttpRspOuterClass;
 import emu.grasscutter.net.proto.RegionInfoOuterClass;
 import emu.grasscutter.net.proto.RegionInfoOuterClass.RegionInfo;
 import emu.grasscutter.net.proto.RegionSimpleInfoOuterClass.RegionSimpleInfo;
@@ -139,12 +140,13 @@ public final class RegionHandler implements Router {
         // Invoke event.
         QueryCurrentRegionEvent event = new QueryCurrentRegionEvent(regionData); event.call();
         // Respond with event result.
+
         response.json(
             Map.of(
                 "content", 
                 event.getRegionInfo(), 
                 "sign", 
-                "CN 2.7.52 After Patch: 276072ED62B310BA14115E8C4B74B48E84D41B200015C72FE97393C72C40E3F9"
+                "fuck"
             )
         );
 
