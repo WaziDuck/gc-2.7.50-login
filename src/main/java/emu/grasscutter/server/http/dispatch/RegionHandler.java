@@ -80,7 +80,8 @@ public final class RegionHandler implements Router {
             
             // Create a region info object.
             var regionInfo = RegionInfo.newBuilder()
-                    .setGateserverIp(region.Ip).setGateserverPort(region.Port)
+                    .setGateserverIp(region.Ip)
+                    .setGateserverPort(region.Port)
                     .setSecretKey(ByteString.copyFrom(Crypto.DISPATCH_SEED))
                     .build();
             // Create an updated region query.
@@ -138,7 +139,14 @@ public final class RegionHandler implements Router {
         // Invoke event.
         QueryCurrentRegionEvent event = new QueryCurrentRegionEvent(regionData); event.call();
         // Respond with event result.
-        response.send(event.getRegionInfo());
+        response.json(
+            Map.of(
+                "content", 
+                event.getRegionInfo(), 
+                "sign", 
+                "CN 2.7.52 After Patch: 276072ED62B310BA14115E8C4B74B48E84D41B200015C72FE97393C72C40E3F9"
+            )
+        );
 
         // Log to console.
         Grasscutter.getLogger().info(String.format("Client %s request: query_cur_region/%s", request.ip(), regionName));
