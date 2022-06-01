@@ -7,10 +7,11 @@ import emu.grasscutter.net.packet.PacketOpcodes;
 import emu.grasscutter.net.proto.GetPlayerTokenRspOuterClass.GetPlayerTokenRsp;
 import emu.grasscutter.server.game.GameSession;
 import emu.grasscutter.utils.Crypto;
+import emu.grasscutter.utils.Utils;
 
 public class PacketGetPlayerTokenRsp extends BasePacket {
 
-	public PacketGetPlayerTokenRsp(GameSession session) {
+	public PacketGetPlayerTokenRsp(GameSession session, int BNLDENCDKIA, String CAHLCMMFHIH) {
 		super(PacketOpcodes.GetPlayerTokenRsp, true);
 		
 		this.setUseDispatchKey(true);
@@ -19,7 +20,7 @@ public class PacketGetPlayerTokenRsp extends BasePacket {
 				.setUid(session.getPlayer().getUid())
 				.setToken(session.getAccount().getToken())
 				.setAccountType(1)
-				.setIsProficientPlayer(session.getPlayer().getAvatars().getAvatarCount() > 0) // Not sure where this goes
+				.setIsProficientPlayer(session.getPlayer().getAvatars().getAvatarCount() > 0)
 				.setSecretKeySeed(Crypto.ENCRYPT_SEED)
 				.setSecurityCmdBuffer(ByteString.copyFrom(Crypto.ENCRYPT_SEED_BUFFER))
 				.setPlatformType(3)
@@ -28,6 +29,9 @@ public class PacketGetPlayerTokenRsp extends BasePacket {
 				.setClientVersionRandomKey("c25-314dd05b0b5f")
 				.setRegPlatform(3)
 				.setClientIpStr(session.getAddress().getAddress().getHostAddress())
+				.setPAKPELLDKEM("ZnVjaw==")
+				.setBNLDENCDKIA(BNLDENCDKIA)
+				.setCAHLCMMFHIH(CAHLCMMFHIH)
 				.build();
 	
 		this.setData(p.toByteArray());

@@ -14,6 +14,9 @@ import emu.grasscutter.server.event.game.PlayerCreationEvent;
 import emu.grasscutter.server.game.GameSession;
 import emu.grasscutter.server.game.GameSession.SessionState;
 import emu.grasscutter.server.packet.send.PacketGetPlayerTokenRsp;
+import emu.grasscutter.utils.ByteHelper;
+import emu.grasscutter.utils.Crypto;
+import emu.grasscutter.utils.Utils;
 
 @Opcodes(PacketOpcodes.GetPlayerTokenReq)
 public class HandlerGetPlayerTokenReq extends PacketHandler {
@@ -68,8 +71,13 @@ public class HandlerGetPlayerTokenReq extends PacketHandler {
 		session.setUseSecretKey(true);
 		session.setState(SessionState.WAITING_FOR_LOGIN);
 
+		byte[] clientBytes = Utils.base64Decode(req.getEHCCPGBHFNC());
+		byte[] seed = ByteHelper.longToBytes(Crypto.ENCRYPT_SEED);
+		Crypto.xor(clientBytes, seed);
+
+		String base64str = Utils.base64Encode(clientBytes);
 		// Send packet
-		session.send(new PacketGetPlayerTokenRsp(session));
+		session.send(new PacketGetPlayerTokenRsp(session, req.getBNLDENCDKIA(), base64str));
 	}
 
 }
